@@ -1,0 +1,49 @@
+
+<div class="orders view">
+    <div class="container">
+        <header>
+            <h2 class="text-danger"><span class="glyphicon glyphicon-share"></span>
+            &nbsp;&nbsp;Charts</h2>
+        </header>
+        <br />
+        <div class="navbar">
+            <ul class="nav nav-pills nav-justified">
+                <li class="toolbar-item">
+                    <a routerLink="line-chart" routerLinkActive="active" class="text-primary">
+                       <span class="glyphicon glyphicon-list"></span>&nbsp;Line Chart
+                    </a>
+                </li>
+                <li class="toolbar-item">
+                    <a  routerLink="force-directed-graph" routerLinkActive="active">
+                        <span class="glyphicon glyphicon-tags"></span>&nbsp;
+                        Force Directed Graph
+                    </a>
+                </li>
+                 <li class="toolbar-item">
+                    <a  routerLink="bar-chart" routerLinkActive="active">
+                        <span class="glyphicon glyphicon-tags"></span>&nbsp;
+                        Bar Graph
+                    </a>
+                </li>
+                 <li class="toolbar-item">
+                    <a routerLink="multi-series-line-chart" routerLinkActive="active">
+                        <span class="glyphicon glyphicon-tags"></span>&nbsp;
+                        Multi Series Line Chart
+                    </a>
+                </li>
+                 <li class="toolbar-item">
+                    <a routerLink="pie-chart" routerLinkActive="active">
+                        <span class="glyphicon glyphicon-tags"></span>&nbsp;
+                        Pie Chart
+                    </a>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="container">
+            <router-outlet></router-outlet>
+            <br />
+            <br />
+        </div>
+    </div>
+</div>
